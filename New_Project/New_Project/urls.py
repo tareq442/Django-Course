@@ -7,4 +7,6 @@ urlpatterns = [
     path('content/', views.Content),
     path('', views.Home),
     path('firstapp/', include("firstapp.urls") ),
+    path('index/', views.index),
+    path('web/', include('secondapp.urls')),
 ]
